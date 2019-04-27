@@ -1,12 +1,15 @@
-import org.junit.Test;
-
 public class RedBlackBSTTest {
 
-    @Test
+    @org.junit.Test
     public void put() {
+        BST redBlackBST = new SplayBST<>();
+        redBlackBST.put("house","casa");
     }
 
-    @Test
+    @org.junit.Test
     public void contains() {
+        BST redBlackBST = new SplayBST<>();
+        redBlackBST.put("house","casa");
+        redBlackBST.contains("house");
     }
 }
