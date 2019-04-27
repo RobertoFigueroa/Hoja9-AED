@@ -82,6 +82,7 @@ public class Main {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            System.out.println("\nTexto en ingles: ");
             textWords = lines.split(" ");
             for(int h=0;h<textWords.length;h++){
                 System.out.print(textWords[h] + " ");
@@ -95,6 +96,7 @@ public class Main {
                     textWords[i] = "*"+textWords[i]+"*";
                 }
             }
+            System.out.println("\n\nTexto traducido en español: ");
 
             for(int h=0;h<textWords.length;h++){
                 System.out.print(textWords[h] + " ");
@@ -108,7 +110,3 @@ public class Main {
     }
 
 
-    /*Todo: mejorar la impresión de la oración tanto en ingles como en español
-    *       hacer pruebas unitarioas de los metodos segun la guía
-    *       intentar hacer interfaz grafica
-    * */
